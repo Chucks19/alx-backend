@@ -53,7 +53,7 @@ class Server:
         assert 0 <= index < csv_size
         data = []
         _next = index
-        for _ in range(page_size):
+        for a_n in range(page_size):
             while not csv.get(_next):
                 _next += 1
             data.append(csv.get(_next))
